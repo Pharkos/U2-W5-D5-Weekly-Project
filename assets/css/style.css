@@ -27,6 +27,7 @@ h6 {
 
 h1 {
   font-size: 2.5rem;
+  padding-top: 45px;
 }
 h2 {
   font-size: 2rem;
@@ -35,9 +36,74 @@ h3 {
   font-size: 1.5rem;
 }
 
+hr {
+  color: black;
+  font-size: 10px;
+}
+
 /* General 80% Rule Container Class*/
 
 .container {
   width: 80%;
   margin: auto;
+}
+
+/* Yellow Part Settings */
+
+header {
+  background-color: #ffc017;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 18px;
+}
+
+header p {
+  margin-bottom: 10px;
+}
+
+.header-btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Working On Cards In Yellow Side */
+
+#cardsGeneral {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  display: flex;
+  width: 33.3%;
+}
+
+/* Working On Main Aside Sections */
+
+.container2 {
+  display: flex;
+}
+
+.asideCardsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.asideRight {
+  background-color: #ffc017;
+  width: 40%;
+}
+
+.imageParagraph {
+  display: inline-block;
 }
