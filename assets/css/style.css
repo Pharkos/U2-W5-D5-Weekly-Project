@@ -52,19 +52,77 @@ hr {
 
 /* Yellow Part Settings */
 
-header {
+.header {
   background-color: #ffc017;
+  padding-top: 1rem;
 }
 
-nav {
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0px;
+  right: -580px;
+}
+
+.half-header {
+  width: 100%;
+  border-bottom: 1px solid #191919;
+  padding-bottom: 1.5rem;
+}
+.navbar .container {
   display: flex;
   justify-content: space-between;
 }
 
-nav ul {
-  display: inline-flex;
+.nav-list {
+  display: flex;
   list-style: none;
-  gap: 18px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #191919;
+  font-weight: 300;
+}
+
+.nav-list li:last-child a {
+  display: inline-block;
+  background-color: #191919;
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  color: white;
+}
+
+.startReadingBtn {
+  display: inline-block;
+  background-color: #191919;
+  padding: 0.2rem 2.2rem;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  margin-top: 1.4rem;
+}
+
+.second-half-header {
+  width: 100%;
+  border-bottom: 1px solid #191919;
+  padding-bottom: 4rem;
+}
+
+.second-half-header p {
+  font-size: 1.2rem;
+  line-height: normal;
 }
 
 header p {
@@ -77,9 +135,15 @@ header p {
   border-radius: 10px;
 }
 
-/* Working On Cards In Yellow Side */
+/* Working On Cards In White Side */
 
 #cardsGeneral {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid grey;
+}
+
+.cards-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -89,16 +153,95 @@ header p {
   width: 33.3%;
 }
 
+.cards-content {
+  padding-top: 9px;
+}
+
+.class-numbers {
+  margin-right: 9px;
+  color: #e5e6e6;
+}
+
+.class-numbers h2 {
+  font-size: 2.3rem;
+}
+
+.cards img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.cards img,
+.cards p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#last-card-paragraph {
+  font-size: small;
+}
+
+.cards .star-photo {
+  width: 24px;
+  height: auto;
+  margin-left: 3px;
+}
+
+.dateParagraph {
+  color: #9c9ea3;
+}
+
+.imageParagraph {
+  color: #191919;
+  font-weight: 500;
+}
+
+.cards-content h4 {
+  margin-top: 5px;
+}
+
+.cards-content span {
+  color: #a9a39d;
+}
+
+/* Main */
+
+.trending {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.trending img {
+  width: 30px;
+  height: auto;
+}
+
+.trending h4 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Second Phase - Second Cards Section */
+
 /* Working On Main Aside Sections */
 
 .container2 {
   display: flex;
 }
 
-.asideCardsContainer {
+.asideLeft {
   display: flex;
-  flex-direction: column;
   width: 60%;
+}
+
+.asideLeft-content-container {
+  display: flex;
 }
 
 .asideRight {
@@ -106,6 +249,36 @@ header p {
   width: 40%;
 }
 
-.imageParagraph {
+.content-right img {
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.title,
+.title h5 {
   display: inline-block;
+  vertical-align: middle;
+}
+
+.read {
+  display: flex;
+  gap: 10px;
+}
+
+.read a {
+  margin-left: auto;
+}
+
+.category {
+  background-color: #e5e6e6;
+  border-radius: 20px;
+}
+
+.readParagraph,
+.category,
+.read img,
+.read a {
+  display: inline-block;
+  vertical-align: middle;
 }
